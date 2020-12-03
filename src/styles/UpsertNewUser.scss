@@ -1,0 +1,82 @@
+.upsert-new-user {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 44vw auto;
+    background-color: #F1F1F1;
+    row-gap: 4vh;
+    align-content: start;
+    padding: 4vh 2vw;
+    .new-user-form-main {
+        grid-column: 1/span 1;
+        display: grid;
+        grid-template-rows: repeat(2,auto);
+        gap: 6vh;
+        .new-user-form-button {
+            background-color: #242424;
+            border: 0.01vw solid #B7B7B7;
+            color: #ffffff;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            padding: 2vh 0;
+            font-weight: bold;
+            font-size: 0.7vw;
+            letter-spacing: 0.1vw;
+        }
+
+        .new-user-form-button:hover {
+            cursor: pointer;
+        }
+
+        .new-user-form {
+            display: grid;
+            row-gap: 3vh;
+            color: #000000;
+            label {
+                letter-spacing: 0.1vw;
+            }
+            input {
+                border-radius: 0.2vw;
+                border: none;
+                font-size: 0.8vw;
+                letter-spacing: 0.1vw;
+                padding: 1.8vh 1vw;
+                width: 100%;
+            }
+            .first-div > div, .last-div > div {
+                display: grid;
+                grid-template-rows: repeat(2, auto);
+                row-gap: 0.5vh;
+                p {
+                    font-size: 1vw;
+                    letter-spacing: 0.1vw;
+                }
+            }
+            .first-div {
+                display: grid;
+                row-gap: 2vh;
+                & > div {
+                    input {
+                        font-weight: bold;
+                    }
+                    input::placeholder {
+                        letter-spacing: 0.1vw;
+                    }
+                }
+            }
+
+            .last-div {
+                display: grid;
+                row-gap: 3vh;
+                color: #000000;
+                & > div {
+                    gap: 1vh;
+                }
+                label {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

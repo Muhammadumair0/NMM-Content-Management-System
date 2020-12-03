@@ -1,0 +1,89 @@
+.after-file-upload {
+  background-color: #ffffff;
+  display: grid;
+  padding: 2vh 1vw;
+  grid-template-columns: 48.5vw 25.5vw;
+  position: relative;
+
+  .upload-left-div-1 {
+      // height: 40vh;
+      & > div {
+        
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, 15vw);
+        column-gap: 0.5vw;
+        .every-three-set .item  {
+          padding: 1vh 0.5vw;
+          border-radius: 0.4vw;
+        }
+        .every-three-set .item:hover {
+          background-color: #99FFCC;
+          cursor: pointer;
+        }
+      img {
+        height: 6.6vw;
+        width: 14vw;
+        border-radius: 0.4vw;
+      }
+      }
+    
+  }
+
+
+  .upload-left-div-2 {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    & > div {
+      display: grid;
+      align-content: center;
+      justify-content: center;
+      grid-template-rows: repeat(3, auto);
+      gap: 3vh;
+      img {
+        height: 25vh;
+        width: 25vw;
+        border-radius: 0.4vw;
+        margin-top: 1vh !important;
+      }
+      & > p {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        font-size: 0.8vw;
+      }
+
+      & > div:last-child {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+
+        p {
+          background-color: #e1e1e1;
+          padding: 1.5vh 3vw;
+          font-size: 0.9vw;
+          font-weight: bolder;
+          color: rgba(0, 0, 0, 0.6);
+          border: 0.1vw solid #b7b7b7;
+        }
+
+        p:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+.hs {
+  
+  display: grid;
+  height: 100%;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
+  overflow-x: auto;
+
+}

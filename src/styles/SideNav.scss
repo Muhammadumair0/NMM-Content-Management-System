@@ -1,0 +1,107 @@
+.side-nav {
+  height: 100%;
+  background-color: #242424;
+  padding-top: 4vh;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 8vh;
+
+  .first-section {
+      display: grid;
+      gap: 2.5vh;
+      padding: 0 1.5vw;
+    .header {
+      display: grid;
+      gap: 2vh;
+      .circle-image {
+        height: 5vh;
+        width: 2.5vw;
+        border-radius: 50%;
+        background-color: #99ffcc;
+      }
+
+      & p {
+        color: #99ffcc;
+        font-size: 0.8vw;
+        line-height: 1vh;
+      }
+    }
+
+    .logout {  
+      font-size: 0.6vw;
+      display: grid;
+      gap: 1vh;
+      
+      & p:first-child {
+        color: #c5c5c5;
+      }
+
+      & p:last-child {
+        color: #99ffcc;
+        font-weight: lighter;
+        display: grid;
+        justify-content: start;
+        align-content: center;
+        column-gap: 0.5vw;
+        grid-template-columns: repeat(2, auto);
+        span {
+          display: grid;
+          align-content: center;
+          img {
+            height: 1.2vh;
+          }
+        }
+      }
+
+      & p:last-child:hover {
+          cursor: pointer;
+      }
+    }
+  }
+
+  .second-section {
+      color: #FFFFFF;
+      font-size: 0.8vw;
+      .nav-main {
+      .nav-item {
+          padding: 0 1.5vw;
+          display: grid;
+          align-items: center;
+          justify-content: start;
+          gap: 1vw;
+          height: 8vh;
+          grid-template-columns: repeat(2, auto);
+      }
+
+      .nav-item > div {
+          img {
+              height: 2vh;
+              width: 2vw;
+          }
+      }
+
+      .nav-item:hover {
+          background-color: #333333;
+          cursor: pointer;
+      }
+
+      & > div:last-child {
+          display: grid;
+          row-gap: 2vh;
+          align-content: center;
+          padding: 2vh 2vw;
+          font-weight: normal;
+          background-color: #333333;
+          & > p:last-child {
+            margin-bottom: 0.5vh !important;
+          }
+          p:hover {
+            cursor: pointer;
+          }
+      }
+    }
+  }
+}
